@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入swiper 的css文件-->
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <!-- 引入自己的css文件-->
+    <link rel="stylesheet" href="./css/label.css">
+    <!-- 引入Jquery文件-->
+    <script src="./lib/swiper/js/jquery-3.1.1.min.js"></script>
+    <!-- 引入swiper的js文件-->
+   <script src="./lib/swiper/js/swiper.min.js"></script>
+   <script>
+       document.querySelector('html').style.fontSize=window.screen.width/10+'px';
+       console.log( document.querySelector('html').style.fontSize);
+   </script>
+    
+</head>
+<body>
+    <div class="main">
+        <!-- 搜索框 -->
+        <div class="search">
+           <div class="searchBar">
+            <input type="text" placeholder="搜索标签朋友文字">
+            <img src="./img/01-app-icons/explore_search.png" alt="" class="explore">
+            <img src="./img/01-app-icons/dashboard_find_friend.png" alt="" class="account">
+           </div>
+        </div>
+        <!-- Banner部分 -->
+        <div class="banner">
+            
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner5.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner6.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner7.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner8.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner9.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/05-banner/banner10.jpg" alt="">
+                    </div>
+        
+                </div>
+           
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 照片展示 -->
+        
+        <div class="photo">
+                <div class="swiper-container1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="title">美眉</div>
+                            <div class="content">
+                                <img src="./img/02-head-icons/01.jpg" alt="">
+                                <img src="./img/02-head-icons/02.jpg" alt="">
+                                <img src="./img/02-head-icons/03.jpg" alt="">
+                                <img src="./img/02-head-icons/04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">美眉</div>
+                            <div class="content">
+                                <img src="./img/02-head-icons/01.jpg" alt="">
+                                <img src="./img/02-head-icons/02.jpg" alt="">
+                                <img src="./img/02-head-icons/03.jpg" alt="">
+                                <img src="./img/02-head-icons/04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="title">美眉</div>
+                            <div class="content">
+                                <img src="./img/02-head-icons/01.jpg" alt="">
+                                <img src="./img/02-head-icons/02.jpg" alt="">
+                                <img src="./img/02-head-icons/03.jpg" alt="">
+                                <img src="./img/02-head-icons/04.jpg" alt="">
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+        </div> 
+        <!-- 底部占位 -->
+        <div class="bottom"></div>
+    </div>
+    <div class="footTab">
+        <a href="./index.html" ><img src="./img/01-app-icons/bb_btn_home_unselect.png" alt=""><span>首页</span></a>
+        <a href="./label.html" class="active"><img src="./img/01-app-icons/bb_btn_label_unselect.png" alt=""><span>订阅</span></a>
+        <a href="#"><img src="./img/01-app-icons/bb_btn_post_select.png" alt=""></a>
+        <a href="./message.html" ><img src="./img/01-app-icons/bb_btn_message_unselect.png" alt=""><span>消息</span></a>
+        <a href="./account.html" ><img src="./img/01-app-icons/bb_btn_account_unselect.png" alt=""><span>我的</span></a>
+    </div>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+    // photos部分的js
+    var swiper1 = new Swiper('.swiper-container1', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 10,
+            stretch: -40,
+            depth: 50,
+            modifier: 1,
+            slideShadows : false,
+          },
+          
+        });
+  </script>
+
+
+</body>
+
+</html>
+
+<script>
+    $(function(){
+
+    })
+    window.onload(function(){
+
+    })
+
+    
+</script>

@@ -1,0 +1,42 @@
+@import './normalize.min.scss';
+html,body{
+    height: 100%;
+}
+//定义像素转rem的函数
+@function ptr($p){
+    @return ($p/64)+rem;
+}
+a{
+    text-decoration: none;
+}
+.footTab{
+    width: 100%;
+    height: ptr(100);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom:0;
+    .active{
+        opacity: 1;
+    }
+    a{
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color:#336162;
+        opacity: 0.5;
+       
+       
+        img{
+            height: ptr(50);
+
+        }
+        span{
+            font-size: ptr(24);
+        }
+
+    }
+}

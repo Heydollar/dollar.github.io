@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入swiper 的css文件-->
+    <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+    <!-- 引入自己的css文件-->
+    <link rel="stylesheet" href="./css/test.css">
+    <!-- 引入Jquery文件-->
+    <script src="./lib/swiper/js/jquery-3.1.1.min.js"></script>
+    <!-- 引入swiper的js文件-->
+   <script src="./lib/swiper/js/swiper.min.js"></script>
+  
+    
+</head>
+<body>
+    <!-- Swiper -->
+<div class="photo">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="title">美眉</div>
+                <div class="content">
+                    <img src="./img/02-head-icons/01.jpg" alt="">
+                    <img src="./img/02-head-icons/02.jpg" alt="">
+                    <img src="./img/02-head-icons/03.jpg" alt="">
+                    <img src="./img/02-head-icons/04.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">美眉</div>
+                <div class="content">
+                    <img src="./img/02-head-icons/01.jpg" alt="">
+                    <img src="./img/02-head-icons/02.jpg" alt="">
+                    <img src="./img/02-head-icons/03.jpg" alt="">
+                    <img src="./img/02-head-icons/04.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title">美眉</div>
+                <div class="content">
+                    <img src="./img/02-head-icons/01.jpg" alt="">
+                    <img src="./img/02-head-icons/02.jpg" alt="">
+                    <img src="./img/02-head-icons/03.jpg" alt="">
+                    <img src="./img/02-head-icons/04.jpg" alt="">
+                </div>
+            </div>
+    
+        </div>
+    </div>
+</div>
+    
+    
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          
+        });
+      </script>
+    
+    
+  
+
+</body>
+
+</html>
